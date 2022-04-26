@@ -183,7 +183,7 @@ header #menu{
     border-color: #73e08b;
 }
 
-.login-form form .box:nth-child(3), .regis-form form .box:nth-child(4){
+.login-form form .box:nth-child(5), .regis-form form .box:nth-child(4){
     margin-bottom: 2.5rem;
 }
 

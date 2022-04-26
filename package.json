@@ -1,0 +1,18 @@
+{
+  "name": "online_course",
+  "version": "1.0.0",
+  "description": "this is the database of one of my group assignments called siPintar and this assignment is an online course",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/faridwijayaaa/Online-Course"
+  },
+  "author": "Farid Wijaya",
+  "license": "MIT"
+}
