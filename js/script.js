@@ -13,12 +13,27 @@ $(document).ready(function(){
         $('.login-form').removeClass('popup');
     });
 
+    $('#regis').click(function(){
+        $('.login-form').removeClass('popup');
+        $('.regis-form').addClass('popup');
+    });
+
+    $('.regis-form form .fa-times').click(function(){
+        $('.regis-form').removeClass('popup');
+    });
+
+    $('#back').click(function(){
+        $('.regis-form').removeClass('popup');
+        $('.login-form').addClass('popup');
+    });
+
     $(window).on('load scroll',function(){
 
         $('#menu').removeClass('fa-times');
         $('.navbar').removeClass('nav-toggle');
 
         $('.login-form').removeClass('popup');
+        // $('.regis-form').removeClass('popup');
 
         $('section').each(function(){
 
