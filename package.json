@@ -1,18 +1,39 @@
 {
-  "name": "online_course",
+  "name": "online-course",
   "version": "1.0.0",
-  "description": "this is the database of one of my group assignments called siPintar and this assignment is an online course",
-  "main": "server.js",
-  "dependencies": {
-    "express": "^4.14.0"
-  },
+  "description": "SIPINTAR is a online course",
+  "main": "app.js",
   "scripts": {
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/faridwijayaaa/Online-Course"
+    "url": "git+https://github.com/faridwijayaaa/Online-Course.git"
   },
-  "author": "Farid Wijaya",
-  "license": "MIT"
+  "author": "farid wijaya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faridwijayaaa/Online-Course/issues"
+  },
+  "homepage": "https://github.com/faridwijayaaa/Online-Course#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.0",
+    "hbs": "^4.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "kill-port": "^1.6.1"
+  },
+    "events": {
+      "restart": "kill-port 3000",
+      "crash": "kill-port 3000"
+     },
+    "delay": "1500"
 }

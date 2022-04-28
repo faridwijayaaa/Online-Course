@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    --primary-color: #4E944F;
+    --secondary-color: #83BD75;
+    --third-color: #FAF9F9;
+    --fourth-color: #464646;
+    --font: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    background:url(/home-bg.jpg) no-repeat;
+    font-family: var(--font);
+}
+
+section {
+    background: #4e944f;
+    width: 70%;
+    height: 500px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bar {
+    float: left;
+}
+
+.left {
+    width: 50%;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.left img {
+    width: 350px;
+}
+
+.left h3 {
+    width: 50%;
+    margin: auto;
+    color: var(--third-color);
+}
+
+.right {
+    border-radius: 0px 10px 10px 0px;
+    width: 50%;
+    height: 500px;
+    background-color: #faf9f9e8;
+    padding: 2% 50px;
+}
+
+.right h1 {
+    font-weight: bolder;
+    color: var(--primary-color);
+}
+
+.right p {
+    font-size: 1.9vh;
+    color: var(--fourth-color);
+}
+
+.right p a {
+    text-decoration: none;
+    color: var(--primary-color, #4E944F);
+    font-weight: bold;
+}
+
+.right .alert {
+    color: rgb(255, 0, 0);
+    font-weight: bolder;
+    padding: 5px 5px;
+}
+
+.fa {
+    width: 12px;
+    margin-right: 10px;
+}
+
+.btn{
+    border: var(--fourth-color) 1px solid;
+    font-size: 2vh;
+    padding: 10px;
+    margin: auto;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.input-content p {
+    font-size: 2vh;
+    color: #000;
+    font-weight: bold;
+}
+
+.input-content .input {
+    margin-top: -10px;
+}
+
+.submit {
+    margin-top: 30px;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: var(--third-color);
+    font-weight: bold;
+}
+
+.submit:hover{
+    background-color: var(--primary-color);
+}
+
+.fa-email {
+    background-image: url(/registrasi-page/img/email.png);
+}
+
+
+@media screen and (max-width: 1000px) {
+    .left img {
+        width: 250px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .bar {
+        float: none;
+    }
+
+    .left, .right {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .left img {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 600px) { 
+    .bar {
+        float: none;
+    }
+
+    .right {
+        margin-bottom: 40px;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .left h3 {
+        font-size: 2.2vh;
+    }
+
+    .left img {
+        width: 200px;
+    }
+
+    .right h1{
+        font-size: 2.2vh;
+        margin-bottom: 20px;
+    }
+
+    .right p, .btn{
+        font-size: 1.7vh;
+    }
+}

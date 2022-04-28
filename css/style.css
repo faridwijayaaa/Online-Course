@@ -91,8 +91,9 @@ header{
 }
 
 header .logo{
-    color:#fff;
-    font-size: 2.5rem;
+    padding: 0;
+    margin: 0;
+    width: 150px;
 }
 
 header .navbar ul{
@@ -100,6 +101,7 @@ header .navbar ul{
     align-items: center;
     justify-content: center;
     list-style: none;
+    margin-left: -140px;
 }
 
 header .navbar ul li{
@@ -183,7 +185,7 @@ header #menu{
     border-color: #73e08b;
 }
 
-.login-form form .box:nth-child(5), .regis-form form .box:nth-child(4){
+.login-form form .box:nth-child(6), .regis-form form .box:nth-child(9){
     margin-bottom: 2.5rem;
 }
 
@@ -225,7 +227,7 @@ header #menu{
     align-items: center;
     justify-content: center;
     flex-flow: column;
-    background:url(../images/home-bg.jpg) no-repeat;
+    background:url(/home-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -250,7 +252,7 @@ header #menu{
     bottom:-.2rem; left: 0;
     height:15rem;
     width:100%;
-    background:url(../images/shape.png);
+    background:url(/shape.png);
     block-size: 100rem 15rem;
     filter: drop-shadow(0 -.1rem .1rem rgba(0,0,0,.2));
     animation: animate 10s linear infinite;
@@ -377,7 +379,7 @@ header #menu{
 
 .teacher{
     text-align: center;
-    background:url(../images/teachers.jfif) no-repeat;
+    background:url(/teachers.jfif) no-repeat;
     background-size: cover;
     background-position: bottom;
 }
