@@ -135,7 +135,7 @@ header #menu{
     display: none;
 }
 
-.login-form, .regis-form{
+.login-form{
     height:100%;
     width:100%;
     position: fixed;
@@ -147,11 +147,11 @@ header #menu{
     justify-content: center;
 }
 
-.login-form.popup, .regis-form.popup{
+.login-form.popup{
     top:0;
 }
 
-.login-form form, .regis-form form{
+.login-form form{
     width:35rem;
     background:#fff;
     margin:0 2rem;
@@ -161,13 +161,13 @@ header #menu{
     position: relative;
 }
 
-.login-form form h3, .regis-form form h3{
+.login-form form h3{
     font-size: 3rem;
     color:#73e08b;
     padding:1rem 0;
 }
 
-.login-form form .box, .regis-form form .box{
+.login-form form .box{
     width:100%;
     padding:1rem 0;
     margin:1rem 0;
@@ -185,7 +185,7 @@ header #menu{
     border-color: #73e08b;
 }
 
-.login-form form .box:nth-child(6), .regis-form form .box:nth-child(9){
+.login-form form .box:nth-child(6){
     margin-bottom: 2.5rem;
 }
 
@@ -195,7 +195,7 @@ header #menu{
     padding:.5rem 0;
 }
 
-.fform form p i{
+.fform form p a{
     color:#73e08b;
     font-weight: bold;
     cursor: pointer;

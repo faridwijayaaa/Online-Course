@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SIPINTAR | Sign up</title>
+    <title>SIPINTAR | Sign in</title>
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 
     <!-- google fonts cdn link  -->
@@ -23,20 +23,14 @@
 </head>
 <body>
     <section>
-        <form action="/auth/register" method="post">
+        <form action="/auth/login" method="post">
             <div class="left bar">
                 <a href="/index"><img src="/Sipintar.png" alt="logo SIPINTAR" class="logo"></a>
-                <img src="/regis.png" alt="Ilustration image for registration">
-                <h3>Let's register and start improving skills about school lessons</h3>
+                <img src="/lgn.png" alt="Ilustration image for registration" class="logo-lgn">
+                <h3 style="margin-top: 10px;">Come on in and explore your favorite course</h3>
             </div>
             <div class="right bar">
-                <h1>New Account.</h1>
-                <p style="margin-top: -2.5vh">Already have an account? <a href="/login" class="sign-in">Sign in</a></p>
-                <div class="input-content">
-                    <p>Name</p>
-                    <label for="name"></label>
-                    <input type="text" name="name" class="btn" placeholder="Name" class="box" required/>
-                </div>
+                <h1 style="margin-top: 20%;">Get's started.</h1>
                 <div class="input-content">
                     <p>Email address</p>
                     <label for="email"></label>
@@ -47,15 +41,8 @@
                     <label for="password"></label>
                     <input type="password" name="password" class="btn input" placeholder="*******" required/>
                 </div>
-                <div class="input-content">
-                    <p>Confirm Password</p>
-                    <label for="passwordConfirm"></label>
-                    <input type="password" name="passwordConfirm" class="btn input" placeholder="*******" required/>
-                </div>
-                <button type="submit" class="btn submit">Register</button>
-                {{#if message }}
-                    <p class="alert alert-denger mt-4">{{message}}</p>
-                {{/if}}
+                <button type="submit" class="btn submit">Sign in</button>
+                <p style="font-size: medium;"><a href="/register" class="sign-in">Create an account</a></p>
             </div>
         </form>
     </section>
