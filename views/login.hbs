@@ -42,7 +42,10 @@
                     <input type="password" name="password" class="btn input" placeholder="*******" required/>
                 </div>
                 <button type="submit" class="btn submit">Sign in</button>
-                <p style="font-size: medium;"><a href="/register" class="sign-in">Create an account</a></p>
+                {{#if message }}
+                    <p class="alert alert-denger mt-4">{{message}}</p>
+                {{/if}}
+                <p style="font-size: medium; margin-left: 4px"><a href="/register" class="sign-in">Create an account</a></p>
             </div>
         </form>
     </section>

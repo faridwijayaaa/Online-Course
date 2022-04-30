@@ -1,6 +1,6 @@
 const mysql = require('mysql');
 const express = require('express');
-// const session = require('express-session');
+const session = require('express-session');
 const path = require('path');
 const dotenv = require('dotenv');
 
@@ -12,6 +12,12 @@ const db = mysql.createConnection({
     password    : 'Polopo.90',
     database    : 'online_course'
 });
+
+app.use(session({ 
+    secret: 'secret',
+    resave: false,
+    saveUninitialized: true,
+}))
 
 const cssDirectory = path.join(__dirname, './css');
 app.use(express.static(cssDirectory));
